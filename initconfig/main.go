@@ -1,7 +1,7 @@
 package main
 
 import (
-	"caliper-benchmarks/sdkInit"
+	"fabric_wallet/sdkInit"
 	"fmt"
 	"os"
 )
