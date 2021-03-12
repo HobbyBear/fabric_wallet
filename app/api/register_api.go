@@ -1,7 +1,7 @@
 package api
 
 import (
-	"caliper-benchmarks/app/controllers"
+	"fabric_wallet/app/controllers"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"caliper-benchmarks/app/service"
 	"encoding/json"
+	"fabric_wallet/app/service"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson/primitive"

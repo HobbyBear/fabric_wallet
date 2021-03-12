@@ -5,10 +5,10 @@
 package main
 
 import (
-	"caliper-benchmarks/app/api"
-	"caliper-benchmarks/app/controllers"
-	"caliper-benchmarks/app/service"
-	"caliper-benchmarks/sdkInit"
+	"fabric_wallet/app/api"
+	"fabric_wallet/app/controllers"
+	"fabric_wallet/app/service"
+	"fabric_wallet/sdkInit"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/channel"
