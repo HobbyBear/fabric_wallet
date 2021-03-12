@@ -1,5 +1,16 @@
-###caliper 测试
 
+### 安装caliper并绑定sdk
+```shell
+cd fabric_wallet
+npm init -y
+npm install --only=prod \
+    @hyperledger/caliper-cli@0.4.2
+npx caliper bind \
+    --caliper-bind-sut fabric:1.4  --unsafe-perm    
+```
+
+
+###caliper 测试
 ```shell
 cd fabric_wallet
 
