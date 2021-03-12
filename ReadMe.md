@@ -32,6 +32,9 @@ docker-compose up -d
 
 ```shell
 cd initconfig
+go mod init chaincode
+go mod tidy
+go mod vendor
 ### 命令行编译执行的话，需要将configFile的路径改下，改成../config.yaml
 go build 
 ./initconfig
