@@ -1,4 +1,4 @@
-module caliper-benchmarks
+module fabric_wallet
 
 go 1.16
 
