@@ -5,10 +5,21 @@
 package service
 
 import (
+	"crypto/rand"
 	"encoding/json"
 	"fmt"
+	paillier "github.com/Roasbeef/go-go-gadget-paillier"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/channel"
 )
+
+
+var (
+	PrivateKey *paillier.PrivateKey
+)
+
+func init() {
+	PrivateKey, _ = paillier.GenerateKey(rand.Reader, 128)
+}
 
 func (t *ServiceSetup) SaveWallet(wallet Wallet) (string, error) {
 
