@@ -30,6 +30,7 @@ func (t *ServiceSetup) SaveWallet(wallet Wallet) (string, error) {
 	// 将edu对象序列化成为字节数组
 	b, err := json.Marshal(WalletCC{
 		Id:     wallet.Id,
+		// 加密在这里
 		Amount: Encry(wallet.Amount),
 	})
 	if err != nil {
@@ -62,6 +63,7 @@ func (t *ServiceSetup) FindWalletInfoByEntityID(entityID string) (*Wallet, error
 
 	return &Wallet{
 		Id:     walletCC.Id,
+		// 解密在这里，取出来解密
 		Amount: Decry(walletCC.Amount),
 	}, nil
 }
